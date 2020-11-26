@@ -18,7 +18,6 @@ def InputFunction(message, inputType):
 path = os.path.join(os.path.dirname(__file__), 'geckodriver.exe')
 driver = webdriver.Firefox(executable_path=path)
 web_url = InputFunction("Give in the URL of the first element in the Playlist: ", "")
-web_url = web_url[1:]
 driver.get(web_url)
 try:
     while (True):
